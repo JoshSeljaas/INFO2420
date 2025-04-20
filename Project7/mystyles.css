@@ -1,0 +1,101 @@
+/* Reset some default spacing */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #2C3E50;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    background-color: #E74C3C;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  #main {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  aside {
+    background-image: url('Images/2colback.jpg');
+    background-repeat: repeat-y;
+    flex: 0 0 200px;
+    padding: 20px 10px 0 10px;
+  }
+  
+  aside h2 {
+    font-size: 1.1rem;
+    color: #2C3E50;
+    margin-bottom: 10px;
+  }
+  
+  aside p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #222;
+  }
+  
+  article {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  #image {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #thumbs {
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #thumbs img {
+    border: 1px solid #000;
+    margin: 5px;
+    cursor: pointer;
+    width: 60px;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,111 @@
+body {
+    background-color: #F4F4F4;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  #container {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px;
+  }
+  
+  #logoimg {
+    width: 150px;
+    height: 175px;
+  }
+  
+  #bannerimg {
+    max-width: 600px;
+    height: auto;
+  }
+  
+  nav {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    display: inline-block;
+    background-color: #E74C3C;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #C0392B;
+  }
+  
+  /* Main Section */
+  section {
+    background-image: url('Images/2colback.jpg');
+    background-repeat: repeat-y;
+    padding: 20px;
+  }
+  
+  article {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  article h2 {
+    margin-top: 40px;
+    color: #2C3E50;
+  }
+  
+  /* Image swap section */
+  #thumbs, #image {
+    width: 100%;
+    max-width: 700px;
+    border: solid 1px #000;
+    text-align: center;
+    margin: 20px auto;
+    background: #eee;
+    padding: 10px;
+
+  }
+  
+  #thumbs img {
+    border: solid 1px #000;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  #image {
+    height: 400px;
+  }
+  
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: none;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: underline;
+  }

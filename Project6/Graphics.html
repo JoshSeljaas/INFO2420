@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Extreme Honeymoons Graphics</title>
+
+  <script type="text/javascript">
+    function preloadImages() {
+      if (document.images) {
+        print1 = new Image();
+        print2 = new Image();
+        logo1 = new Image();
+        logo2 = new Image();
+
+        print1.src = "Images/print1.jpg";
+        print2.src = "Images/print2.jpg";
+        logo1.src = "Images/logo.png";
+        logo2.src = "Images/logo2.jpg";
+      }
+    }
+
+    function swapMe(thisImage, newImage) {
+      document[thisImage].src = eval(newImage + ".src");
+    }
+
+    // Thumbnail image swap
+    let imgPath = "Images/Fullsize/";
+    let imgArray = [
+      "CoupleCamping.jpg",
+      "CoupleEveningLg.jpg",
+      "CoupleHikingLg.jpg",
+      "CoupleSnowBoardLg.jpg"
+    ];
+
+    let titleArray = [
+      "Couple Camping",
+      "Evening Walk",
+      "Mountain Hike",
+      "Snowboarding Adventure"
+    ];
+
+    function swapImage(imgID) {
+      document.getElementById("fullimage").src = imgPath + imgArray[imgID];
+      document.getElementById("imagetitle").innerHTML = titleArray[imgID];
+    }
+  </script>
+
+  <style type="text/css">
+    #thumbs, #image {
+      width: 700px;
+      border: solid 1px #000;
+      text-align: center;
+      margin: 20px auto;
+      background: #eee;
+      padding: 10px;
+    }
+
+    #thumbs img {
+      border: solid 1px #000;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #image {
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body onload="preloadImages()">
+
+  <h1>Graphics for Extreme Honeymoons</h1>
+
+  <!-- 🔘 Print Button Rollover -->
+  <div>
+    <a href="#"
+       onmouseover="swapMe('printimage','print2');"
+       onmouseout="swapMe('printimage','print1');">
+      <img src="Images/print1.jpg"
+           alt="Print Page"
+           width="200"
+           height="50"
+           name="printimage">
+    </a>
+  </div>
+
+  <!-- 🎯 Logo Rollover -->
+  <div style="margin-top: 20px;">
+    <a href="#"
+       onmouseover="swapMe('logoimage','logo2');"
+       onmouseout="swapMe('logoimage','logo1');">
+      <img src="Images/logo.png"
+           alt="Extreme Honeymoons Logo"
+           width="150"
+           height="175"
+           name="logoimage">
+    </a>
+  </div>
+
+  <!-- 📸 Image Swap Section -->
+  <div id="image">
+    <h3 id="imagetitle">Couple Camping</h3>
+    <img src="Images/Fullsize/CoupleCamping.jpg" alt="Main Image" id="fullimage" width="400">
+  </div>
+
+  <div id="thumbs">
+    <img src="Images/Thumbnails/CoupleCampingt.jpg" alt="Thumbnail 1" onmouseover="swapImage(0)">
+    <img src="Images/Thumbnails/CoupleEveningLgt.jpg" alt="Thumbnail 2" onmouseover="swapImage(1)">
+    <img src="Images/Thumbnails/CoupleHikingLgt.jpg" alt="Thumbnail 3" onmouseover="swapImage(2)">
+    <img src="Images/Thumbnails/CoupleSnowBoardLgt.jpg" alt="Thumbnail 4" onmouseover="swapImage(3)">
+  </div>
+
+  <!-- 🧱 Background Preview -->
+  <h2 style="text-align: center;">Project 7 Background Preview</h2>
+  <div style="text-align: center;">
+    <img src="Images/2colback.jpg" alt="2-column background preview" width="900" height="150">
+  </div>
+
+</body>
+</html>
